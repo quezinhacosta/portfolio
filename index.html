@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="iconovo.png" type="image/x-icon">
+    <title>𝙌𝙪𝙚𝙯𝙞𝙖 𝘾𝙤𝙨𝙩𝙖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">𝘀𝗼𝗯𝗿𝗲</a></li>
+                <li><a href="#projects">𝗽𝗿𝗼𝗷𝗲𝘁𝗼𝘀</a></li>
+                <li><a href="#contact">𝗰𝗼𝗻𝘁𝗮𝘁𝗼</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h2>Olá, eu sou</h2>
+                <h1>𝙌𝙪𝙚𝙯𝙞𝙖 𝘾𝙤𝙨𝙩𝙖</h1>
+                <h2>Bem-vindo(a) ao meu portfolio!</h2>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h1>sobre mim</h1>
+            <img src="fotominha.png" alt="Foto de Quezia Costa"> 
+            <p>estudante de ciências da computação</p>
+            <p>web desenvolvedora em formação</p>
+            <p>entusiasta em desenvolvimento mobile e dados</p>
+            <p>apaixonada por tecnologia e inovação</p>
+        </section>
+
+        <section class="projects" id="projects">
+            <h1>projetos importantes</h1>
+            
+            <div class="projects-completed">
+                <h2>concluídos</h2>
+                <div class="project-grid">
+                    <button class="carousel-btn prev" onclick="scrollCarousel('left')">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="fotoproj1.png" alt="Projeto 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Site oficial da Igreja Batista Central do Carpina</h3>
+                            <p>Projeto voluntário. Desenvolvi o site oficial da Igreja Batista Central do Carpina.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://quezinhacosta.github.io/IGREJA_BATISTA_CENTRAL/"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="https://github.com/quezinhacosta/IGREJA_BATISTA_CENTRAL"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="fotoproj2.png" alt="Projeto 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Loyout da página inicial do google</h3>
+                            <p>Desenvolvi esse loyout para a semana da computação da minha universidade, com o objetivo de demonstrar como linguagens de estruturação funcionam na prática</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://quezinhacosta.github.io/Semana-da-computa-o/"><i class="fas fa-external-link-alt"></i> Demo</a>
+                                <a href="https://github.com/quezinhacosta/Semana-da-computa-o"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="fotoproj3.png" alt="Projeto 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Administração de dados</h3>
+                            <p>Este projeto foi desenvolvido com o objetivo de reforçar os conhecimentos da linguagem C e na manipulação de arquivos e dados. Basicamente, teve como objetivo administrar os dados de uma faculdade.</p>
+                            <div class="project-tags">
+                                <span class="tag">C</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/quezinhacosta/Projeto/blob/main/proj_manipula%C3%A7%C3%A3o.cpp"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="fotoproj4.png" alt="Projeto 1">
+                        </div> 
+                        <div class="project-info">
+                            <h3>Labirinto dos mistérios</h3>
+                            <p>Jogo inteiramente em java. Feito em conjunto com Kailane Lisley e Juliana Cristina.</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/KailaneLisley/Labirinto_dos_Misterios"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="scrollCarousel('right')">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+            </div>
+            
+            <div class="projects-in-progress">
+                <h2>em desenvolvimento</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="in-progress-badge"></div>
+                        <div class="project-image">
+                            <img src="capa oficial.jpg" alt="Projeto 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Sweet Bomb</h3>
+                            <p>Jogo inspirado no "bomb it", inteiramente em java</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="in-progress-badge"></div>
+                        <div class="project-image">
+                            <img src="emandamento.png" alt="Projeto 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Administrador financeiro pessoal</h3>
+                            <p>É um aplicativo mobile que tem como objetivo ser um administrador financeiro simples, intuitivo e prático</p>
+                            <div class="project-tags">
+                                <span class="tag">Java (até agora)</span>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="arte" id="contact">
+            <img src="banner.png" alt="Arte de Quezia Costa" class="full-width-image">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/quezinhacosta" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/quezia-costa-5195342b3/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/quez_costa/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p>© 2025 Quezia Costa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollCarousel(direction) {
+            const carousel = document.querySelector('.projects-completed .project-grid');
+            const cardWidth = document.querySelector('.project-card').offsetWidth;
+            const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
+            
+            carousel.scrollBy({ 
+                left: scrollAmount, 
+                behavior: 'smooth' 
+            });
+        }
+    
+        // Adiciona navegação por teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') scrollCarousel('left');
+            if (e.key === 'ArrowRight') scrollCarousel('right');
+        });
+    </script>
+
+</body>
+</html>
